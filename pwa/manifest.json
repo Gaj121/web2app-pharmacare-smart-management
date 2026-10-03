@@ -1,0 +1,22 @@
+{
+  "name": "pharmacare Smart Management ",
+  "short_name": "pharmacare S",
+  "description": "pharmacare Smart Management ",
+  "start_url": "https://pharmacaresmart.kliv.site/",
+  "scope": "https://pharmacaresmart.kliv.site/",
+  "display": "standalone",
+  "background_color": "#0C0F14",
+  "theme_color": "#EC4899",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

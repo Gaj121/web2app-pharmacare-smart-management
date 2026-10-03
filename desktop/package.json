@@ -1,0 +1,59 @@
+{
+  "name": "pharmacaresmartmanagement",
+  "productName": "pharmacare Smart Management ",
+  "version": "1.0.0",
+  "description": "pharmacare Smart Management  — official desktop app (Windows + Mac)",
+  "author": "pharmacare Smart Management ",
+  "license": "MIT",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^31.3.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "site.pharmacaresmart.desktop",
+    "productName": "pharmacare Smart Management ",
+    "asar": true,
+    "files": [
+      "main.js",
+      "icon.png",
+      "package.json"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "icon.png"
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "artifactName": "${productName}-Setup.${ext}"
+    },
+    "mac": {
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "universal"
+          ]
+        }
+      ],
+      "icon": "icon.png",
+      "category": "public.app-category.utilities",
+      "identity": null
+    }
+  }
+}
